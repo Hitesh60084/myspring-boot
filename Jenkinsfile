@@ -1,5 +1,5 @@
 pipeline{
-  agent {label 'login_page'}
+  agent 'any'
       environment {
         IMAGE_TAG = "${env.BUILD_NUMBER}"
         registry = "519852036875.dkr.ecr.us-east-2.amazonaws.com/cloudjournee:${env.BUILD_NUMBER}"
